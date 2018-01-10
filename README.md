@@ -1,2 +1,1 @@
-# theFirst
-# apenas uma edição
+# forca feita em c 
