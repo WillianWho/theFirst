@@ -1,35 +1,34 @@
 char* escolherFruta ()
 {
-int op=0;
-char p[100];
-printf("palavra número 1 \n");
-printf("palavra número 2 \n");
-printf("palavra número 3 \n");
-printf("palavra número 4 \n");
-printf("palavra número 5\n");
-
-scanf("%d", &op);
-switch (op)
-{
-lt;
-case 1:
-return "abacaxi";
-break;
-case 2: 
-return "amora";
-break;
-case 3:
-return "banana";
-break;
-case 4:
-return "melancia";
-break;
-case 5:
-return "laranja";
-break;
-}//Fim do switch 
-
-}//Fim da função
+    int op=0;
+    char p[100];
+    printf("palavra número 1 \n");
+    printf("palavra número 2 \n");
+    printf("palavra número 3 \n");
+    printf("palavra número 4 \n");
+    printf("palavra número 5\n");
+    scanf("%d", &op);
+    
+    switch (op)
+        {
+        lt;
+        case 1:
+        return "abacaxi";
+        break;
+        case 2: 
+        return "amora";
+        break;
+        case 3:
+        return "banana";
+        break;
+        case 4:
+        return "melancia";
+        break;
+        case 5:
+        return "laranja";
+        break;
+        }//Fim do switch 
+    }//Fim da função
 
 char* escolherAstronomia ()
 {
