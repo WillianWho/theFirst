@@ -13,17 +13,20 @@
 
 int main ()
 {
+    printf("\033[45m"); /* fundo vermelho */
+printf("\033[36m"); /* primeiro plano branco */
     int menu=0;
 // Declaração das variáveis
 while(menu!=2){
 
+        
     char *palavra1=(char*) malloc (80* sizeof(char));
     char palavra[80];
     char palavraAux[80];
     
     char letra;
 
-    
+    char letrasEntradas[26];
     int cont=0;
     int op=0; 
     int n=0;
@@ -31,7 +34,7 @@ while(menu!=2){
     int achou=0;
    char *t=(char*) malloc (30* sizeof(char));
     int erro=0;
-
+   int LE=0;
     setlocale(LC_ALL, "Portuguese");
 
 
@@ -71,8 +74,10 @@ palavra[cont]=palavra1[cont];
 palavraAux[cont] = palavra[cont];
 
 for(cont=0; cont<strlen(palavra1); cont++)
+        
         palavra[cont] = '_';
-
+       
+        
 
 lt;
 
@@ -89,11 +94,15 @@ lt;
             { // 2º for
 // Inserindo a primeira letra
 
-                
-                  
+               if(LE==0) 
+{
+for(cont=0;cont<26;cont++) letrasEntradas[cont]='-';
+}         
                   letra=inserir(palavra);
-            
+letrasEntradas[LE]=letra;
+LE+=2;
 
+                    
 // Verificando se a letra foi está na palavra
                  for(cont=0; cont<strlen(palavra); cont++)
                  { //3º for
@@ -135,8 +144,12 @@ n=naoAchou( chance, n,palavraAux,letra);
                  if(n<strlen(palavra))
                     printf("Tema: %s\n",t);
                
-                      printf("%s\n",palavra);
-                    }
+                      printf("%s\n\n",palavra);
+                        
+printf("Letras entradas:\n%s\n\n",letrasEntradas);
+ }
+ 
+ 
                 achou = 0; 
                  
 
@@ -147,6 +160,8 @@ n=naoAchou( chance, n,palavraAux,letra);
         }// segundo while
         
         menuFinal(&menu);
+        free(palavra1);
+        free(t);
         lt;
         }// primeiro while
         
