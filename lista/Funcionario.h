@@ -6,7 +6,7 @@ int funcionarios()
     funci pFun[100];
     int contFun=0;
     
-    while(op!=3)
+    while(op!=4)
         {
         menu(&op);
         printf("\033[33m"); //cor da fonte azul
@@ -18,7 +18,10 @@ int funcionarios()
                 break;
                 case 2: listarFun(pFun,contFun);
                 break;
-                default: op==3?/**/: puts("\verro! entre uma opção valida\v");
+                case 3:
+                buscaFun(pFun,contFun);
+                break;
+                default: op==4?/**/: puts("\033[41m \033[30merro! entre uma opção válida\033[40m");
                 lb;
                 getchar();
                  break;
