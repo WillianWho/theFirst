@@ -2,9 +2,11 @@ void menu (int *op)
 {
 lt;
 printf("\033[32m"); //cor da fonte verde
-printf("Inserir\t-\t1\n");
-printf("Listar\t-\t2 \n");
-printf("Sair\t-\t3 \n");
+printf("\tMENU\n");
+printf("\tInserir\t-\t1\n");
+printf("\tListar\t-\t2 \n");
+printf("\tBuscar\t-\t3 \n");
+printf("\tSair\t-\t4 \n");
 scanf("%d", op);
 lt;
 }
