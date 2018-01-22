@@ -44,3 +44,35 @@ void listarFun (funci *pFun, int cont)
     getchar();
     lt;
 }
+listarClienteBuscado(cliente *pCli, int i)
+{
+    printf("\tNome: ");
+    printf("%s\n",pCli[i].nomeCli);
+        
+    printf("\tTelefone: ");
+    printf("%s\n",pCli[i].telefoneCli);
+        
+    printf("\tEndereço: ");
+    printf("%s\n",pCli[i].enderecoCli);
+    printf("\n");
+    
+    lb;
+    getchar();
+    lt;
+}
+listarFuncionarioBuscado(funci *pFun, int i)
+{
+    printf("\tNome: ");
+    printf("%s\n",pFun[i].nome);
+        
+    printf("\tTelefone: ");
+    printf("%s\n",pFun[i].telefone);
+        
+    printf("\tEndereço: ");
+    printf("%s\n",pFun[i].endereco);
+    printf("\n");
+    
+    lb;
+    getchar();
+    lt;
+}
