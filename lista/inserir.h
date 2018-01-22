@@ -14,6 +14,7 @@ int inserir (cliente *pCliente, int cliCont)
     printf("Endereço: ");
     lb;
     scanf("%[^\n]s", (pCliente+cliCont)->enderecoCli);
+     
     
     cliCont++;
     lt;

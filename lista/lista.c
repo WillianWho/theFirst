@@ -1,7 +1,7 @@
 /*diretiva "define"*/
 
-//#define false 0
-//#define true 1
+#define FALSE 0
+#define TRUE  1
 #define lb fpurge(stdin)
 #define lt system("clear")
 
@@ -17,7 +17,7 @@
 #include "cliente.h"
 #include "listar.h"
 #include "Funcionario.h"
-//#include 
+#include "buscar.h"
 //#include 
 int main ()
 {
@@ -39,7 +39,10 @@ menuPrincipal (&op);
      break;
             
     default: 
-            op==3?/**/: puts("\033[41m \033[30merro! entre uma opção valida\033[40m");
+            if(op==3)
+            break;
+            else
+             puts("\033[41m \033[30merro! entre uma opção válida\033[40m");
                 
             lb;
             getchar();
