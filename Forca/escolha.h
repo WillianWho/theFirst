@@ -2,6 +2,7 @@ char* escolherFruta ()
 {
     int op=0;
     char p[100];
+    M:
     printf("palavra número 1 \n");
     printf("palavra número 2 \n");
     printf("palavra número 3 \n");
@@ -27,6 +28,11 @@ char* escolherFruta ()
         case 5:
         return "laranja";
         break;
+        default: 
+        lt;
+        puts("Número Inválido\n");
+        goto M;
+        break;
         }//Fim do switch 
     }//Fim da função
 
@@ -34,7 +40,7 @@ char* escolherAstronomia ()
 {
 int op=0;
 char p[100];
-
+M:
 printf("palavra número 1 \n");
 printf("palavra número 2 \n");
 printf("palavra número 3 \n");
@@ -60,6 +66,11 @@ break;
 case 5:
 return "betelgeuse";
 break;
+        default: 
+        lt;
+        puts("Número Inválido\n");
+        goto M;
+        break;
 }//Fim do switch 
 
 }//Fim da função
@@ -70,7 +81,7 @@ char* escolherCidade ()
 {
 int op=0;
 char p[100];
-
+M:
 printf("palavra número 1 \n");
 printf("palavra número 2 \n");
 printf("palavra número 3 \n");
@@ -96,6 +107,11 @@ break;
 case 5:
 return "athena";
 break;
+        default: 
+        lt;
+        puts("Número Inválido\n");
+        goto M;
+        break;
 }//Fim do switch 
 
 }//Fim da função
@@ -106,7 +122,7 @@ char* escolherPais ()
 {
 int op=0;
 char p[100];
-
+M:
 printf("palavra número 1 \n");
 printf("palavra número 2 \n");
 printf("palavra número 3 \n");
@@ -132,6 +148,11 @@ break;
 case 5:
 return "india";
 break;
+        default: 
+        lt;
+        puts("Número Inválido\n");
+        goto M;
+        break;
 }//Fim do switch 
 
 }//Fim da função
@@ -141,7 +162,7 @@ char* escolherProfissao()
 {
 int op=0;
 char p[100];
-
+M:
 printf("palavra número 1 \n");
 printf("palavra número 2 \n");
 printf("palavra número 3 \n");
@@ -167,6 +188,11 @@ break;
 case 5:
 return "programador";
 break;
+        default: 
+        lt;
+        puts("Número Inválido\n");
+        goto M;
+        break;
 }//Fim do switch 
 
 }//Fim da função

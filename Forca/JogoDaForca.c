@@ -84,7 +84,9 @@ palavraAux[cont] = palavra[cont];/*passando para "palavraAux", a palavra recebid
                //se LE for 0 letrasEntradas recebe um hifen
                      for(cont=0;cont<26;cont++)
                       letrasEntradas[cont]='-';
+                        letrasEntradas[25]='\0';
                       }
+                    
 //chamada da função inserir          
                   letra=inserir(palavra);
 //passando para "letrasEntradas" o caracter em letra
@@ -110,26 +112,37 @@ LE+=2;//incrementando LE de 2 em 2
                          }//Chaves do 3º if
                     
                      if(n==strlen(palavra))
-                    printf("Parabéns, a palavra era:\n");
-                    
+                   
+                         printf("\033[46mParabéns, a palavra era:\033[40m\n");
+               
+
                     if(n<1000)
                         {
                         if(n<strlen(palavra))
-                        printf("Tema: %s\n",t);
+                        printf("\033[46mTema: %s\033[40m\n",t);
                          printf("%s\n\n",palavra);
-                        printf("Letras entradas:\n%s\n\n",letrasEntradas);
+                        printf("\033[46mLetras entradas:\n\033[40m\033[41m\033[30m%s\n\033[34m\033[40m\n",letrasEntradas);
                         }
                      achou = 0; 
                     
                     }// Chaves do 2º for
                 } // Chaves do 1º if
             }// segundo while
-        
+            lb;
+            getchar();
+         lt;
         menuFinal(&menu);
         if(menu!=2)
         {
         for(cont=0; cont<strlen(palavra); cont++)
-            palavra[cont]=NULL;
+            {
+                lb;
+                palavra[cont]=NULL;
+                lb;
+                palavraAux[cont]=NULL;
+                
+               // palavra1[cont]=NULL;
+            }
         }
       
          lt;
