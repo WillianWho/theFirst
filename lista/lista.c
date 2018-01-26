@@ -42,7 +42,7 @@ menuPrincipal (&op);
             if(op==3)
             break;
             else
-             puts("\033[41m \033[30merro! entre uma opção válida\033[40m");
+             puts("\033[41m \033[30merro! Entre uma opção válida\033[40m");
                 
             lb;
             getchar();
