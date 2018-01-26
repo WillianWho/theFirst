@@ -11,10 +11,23 @@ int inserir (cliente *pCliente, int cliCont)
     lb;
     scanf("%[^\n]s", (pCliente+cliCont)->telefoneCli);
     
-    printf("Endereço: ");
+    printf("\033[46mEndereço\033[40m\n");
+    printf("Logradouro: ");
     lb;
-    scanf("%[^\n]s", (pCliente+cliCont)->enderecoCli);
-     
+    scanf("%[^\n]s", (pCliente[cliCont].end+cliCont)->log);
+    
+     printf("Rua: ");
+    lb;
+    scanf("%[^\n]s", (pCliente[cliCont].end+cliCont)->rua);
+    
+    printf("Nº Residência: ");
+    lb;
+    scanf("%d", &(pCliente[cliCont].end+cliCont)->casaNum);
+    
+    printf("CEP: ");
+    lb;
+    scanf("%d", &(pCliente[cliCont].end+cliCont)->cep);
+    
     
     cliCont++;
     lt;
@@ -34,9 +47,24 @@ int inserirFun(funci *pFun, int contFun)
     lb;
       scanf("%[^\n]s", (pFun+contFun)->telefone);
     
-    printf("Endereço: ");
+    printf("\033[44mEndereço\n\033[40m");
+    printf("Logradouro: ");
     lb;
-      scanf("%[^\n]s", (pFun+contFun)->endereco);
+    scanf("%[^\n]s", (pFun[contFun].end+contFun)->log);
+    
+     printf("Rua: ");
+    lb;
+    scanf("%[^\n]s", (pFun[contFun].end+contFun)->rua);
+    
+    printf("Nº Residência: ");
+    lb;
+    scanf("%d", &(pFun[contFun].end+contFun)->casaNum);
+    
+    printf("CEP: ");
+    lb;
+    scanf("%d", &(pFun[contFun].end+contFun)->cep);
+    
+    
     
     contFun++;
     lt;
