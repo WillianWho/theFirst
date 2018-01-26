@@ -13,8 +13,20 @@ void listar (cliente *pCli, int cont)
     printf("\tTelefone: ");
     printf("%s\n",pCli[i].telefoneCli);
         
-    printf("\tEndereço: ");
-    printf("%s\n",pCli[i].enderecoCli);
+    printf("\t\033[46mEndereço\033[40m\n");
+        
+    printf("\tLogradouro: ");
+    printf("%s\n",pCli[i].end[i].log);
+        
+    printf("\tRua: ");    
+    printf("%s\n",pCli[i].end[i].rua);
+        
+    printf("\tNº da Residência: ");    
+    printf("%d\n",pCli[i].end[i].casaNum);
+        
+    printf("\tCEP: ");    
+    printf("%d\n",pCli[i].end[i].cep);
+        
     printf("\n");
     }
     lb;
@@ -36,8 +48,20 @@ void listarFun (funci *pFun, int cont)
     printf("\tTelefone: ");
     printf("%s\n",pFun[i].telefone);
         
-    printf("\tEndereço: ");
-    printf("%s\n",pFun[i].endereco);
+    printf("\t\033[44mEndereço\033[40m\n");
+    
+    printf("\tLogradouro: ");
+    printf("%s\n",pFun[i].end[i].log);
+        
+    printf("\tRua: ");    
+    printf("%s\n",pFun[i].end[i].rua);
+        
+    printf("\tNº da Residência: ");    
+    printf("%d\n",pFun[i].end[i].casaNum);
+        
+    printf("\tCEP: ");    
+    printf("%d\n",pFun[i].end[i].cep);
+        
     printf("\n");
     }
     lb;
@@ -52,8 +76,18 @@ listarClienteBuscado(cliente *pCli, int i)
     printf("\tTelefone: ");
     printf("%s\n",pCli[i].telefoneCli);
         
-    printf("\tEndereço: ");
-    printf("%s\n",pCli[i].enderecoCli);
+     printf("\tLogradouro: ");
+    printf("%s\n",pCli[i].end[i].log);
+    
+    printf("\tRua: ");    
+    printf("%s\n",pCli[i].end[i].rua);
+    
+    printf("\tNº da Residência: ");    
+    printf("%d\n",pCli[i].end[i].casaNum);
+    
+    printf("\tCEP: ");    
+    printf("%d\n",pCli[i].end[i].cep);
+    
     printf("\n");
     
     lb;
@@ -67,9 +101,19 @@ listarFuncionarioBuscado(funci *pFun, int i)
         
     printf("\tTelefone: ");
     printf("%s\n",pFun[i].telefone);
-        
-    printf("\tEndereço: ");
-    printf("%s\n",pFun[i].endereco);
+    
+    printf("\tLogradouro: ");
+    printf("%s\n",pFun[i].end[i].log);
+    
+    printf("\tRua: ");    
+    printf("%s\n",pFun[i].end[i].rua);
+    
+    printf("\tNº da Residência: ");    
+    printf("%d\n",pFun[i].end[i].casaNum);
+    
+    printf("\tCEP: ");    
+    printf("%d\n",pFun[i].end[i].cep);
+    
     printf("\n");
     
     lb;
